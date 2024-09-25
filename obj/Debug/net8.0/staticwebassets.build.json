@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "UAlqTHgIrgde6aEl6RS9yznyRUVOL5EvRqXXC73gwAY=",
+  "Source": "ApiRestTask",
+  "BasePath": "_content/ApiRestTask",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

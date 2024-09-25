@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API\\Controllers",
+    "\\Application\\Services",
+    "\\Domain\\Entities",
+    "\\Infraestructure\\Data",
+    "\\Infraestructure\\Repositories",
+    "\\Infraestructure\\Security"
+  ],
+  "SelectedNode": "\\ApiRestTask.csproj",
+  "PreviewInSolutionExplorer": false
+}
