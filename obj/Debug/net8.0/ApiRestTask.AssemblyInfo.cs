@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ApiRestTask")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c407f06fefcfc137de13f44e5610310630d9d07")]
 [assembly: System.Reflection.AssemblyProductAttribute("ApiRestTask")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ApiRestTask")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
