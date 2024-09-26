@@ -43,6 +43,7 @@ builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<JwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<ITaskService, TaskService>();
+builder.Services.AddHttpContextAccessor();
 
 
 builder.Services.AddAuthentication(options =>

@@ -44,7 +44,7 @@ namespace ApiRestTask.Application.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateTask(int id, [FromBody] TaskDto taskDto)
+        public async Task<IActionResult> UpdateTask(int id, [FromBody] UpdateTaskDto taskDto)
         {
             try
             {

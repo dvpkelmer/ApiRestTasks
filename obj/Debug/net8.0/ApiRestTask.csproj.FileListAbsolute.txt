@@ -145,3 +145,4 @@ C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\obj\Debug\net8.0\Api
 C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\obj\Debug\net8.0\ApiRestTask.genruntimeconfig.cache
 C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\obj\Debug\net8.0\ref\ApiRestTask.dll
 C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\obj\Debug\net8.0\ApiRestTask.sourcelink.json

@@ -11,9 +11,12 @@ namespace ApiRestTask.Domain.Entities
         public required string Description { get; set; }
         public required string Status { get; set; }
 
-        [ForeignKey("UserId")]
-        public int AssignedId { get; set; }
-        [ForeignKey("UserId")]
+        [ForeignKey("AssignedUser")]
+        public int? AssignedId { get; set; }
+        public User? AssignedUser { get; set; }  // Usuario asignado
+
+        [ForeignKey("CreatedByUser")]
         public int CreatedById { get; set; }
+        public User? CreatedByUser { get; set; }  // Usuario que creó la tarea
     }
 }

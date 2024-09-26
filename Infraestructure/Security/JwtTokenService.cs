@@ -18,8 +18,9 @@ public class JwtTokenService
         var claims = new[]
         {
             new Claim(JwtRegisteredClaimNames.Email, user.Email),
-            new Claim("rol", user.Role.Name)
-        };
+            new Claim("rol", user.Role.Name),
+            new Claim("userId", user.Id.ToString())
+            };
 
         var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);

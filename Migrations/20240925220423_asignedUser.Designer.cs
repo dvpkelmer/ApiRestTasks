@@ -4,6 +4,7 @@ using ApiRestTask.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiRestTask.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240925220423_asignedUser")]
+    partial class asignedUser
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,6 +53,9 @@ namespace ApiRestTask.Migrations
                     b.Property<int?>("AssignedId")
                         .HasColumnType("int");
 
+                    b.Property<int>("AssignedUserId")
+                        .HasColumnType("int");
+
                     b.Property<int>("CreatedById")
                         .HasColumnType("int");
 
@@ -65,12 +71,9 @@ namespace ApiRestTask.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UserId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("AssignedUserId");
 
                     b.ToTable("Tasks");
                 });
@@ -107,11 +110,13 @@ namespace ApiRestTask.Migrations
 
             modelBuilder.Entity("ApiRestTask.Domain.Entities.Tasks", b =>
                 {
-                    b.HasOne("ApiRestTask.Domain.Entities.User", "User")
+                    b.HasOne("ApiRestTask.Domain.Entities.User", "AssignedUser")
                         .WithMany()
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("AssignedUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("User");
+                    b.Navigation("AssignedUser");
                 });
 
             modelBuilder.Entity("ApiRestTask.Domain.Entities.User", b =>
