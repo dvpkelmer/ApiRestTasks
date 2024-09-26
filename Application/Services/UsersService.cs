@@ -40,7 +40,8 @@ namespace ApiRestTask.Application.Services
             return new AuthResponseDto
             {
                 Status = "Success",
-                Token = token
+                Token = token,
+                Rol = user.Role.Name
             };
         }
 
