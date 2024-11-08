@@ -146,3 +146,6 @@ C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\obj\Debug\net8.0\Api
 C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\obj\Debug\net8.0\ref\ApiRestTask.dll
 C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\obj\Debug\net8.0\ApiRestTask.sourcelink.json
+C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\bin\Debug\net8.0\MailKit.dll
+C:\Users\USUARIO\Documents\DVP\Pruebas Tecnicas\ApiRestTask\bin\Debug\net8.0\MimeKit.dll

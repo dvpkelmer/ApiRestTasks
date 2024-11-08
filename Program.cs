@@ -43,6 +43,8 @@ builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<JwtTokenService, JwtTokenService>();
 builder.Services.AddScoped<ITaskService, TaskService>();
+builder.Services.AddTransient<IEmailService, EmailService>();
+builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddHttpContextAccessor();
 
 
